@@ -38,6 +38,13 @@ module ActiveModel
         expect(creditcard.valid?).to be_truthy
         expect(creditcard.errors[:number]).to eq([])
       end
+
+      it "when prepaidcard number" do
+        TestCreditcard.validates :number, debitcard: true
+        creditcard = TestCreditcard.new(number: '4284851111111111')
+        expect(creditcard.valid?).to be_falsey
+        expect(creditcard.errors[:number]).to eq(["is prepaidcard."])
+      end
     end
   end
 end
