@@ -1,5 +1,6 @@
 # DebitcardValidator
 [![Build Status](https://travis-ci.org/kurotaky/debitcard_validator.svg)](https://travis-ci.org/kurotaky/debitcard_validator)
+[![Code Climate](https://codeclimate.com/github/kurotaky/debitcard_validator/badges/gpa.svg)](https://codeclimate.com/github/kurotaky/debitcard_validator)
 
 debitcard_validator validates Debitcard/Prepaidcard based on Issuer Identifier Number(follows ISO/IEC 7812).
 
