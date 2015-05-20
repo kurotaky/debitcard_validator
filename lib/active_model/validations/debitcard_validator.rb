@@ -16,7 +16,7 @@ module ActiveModel
       end
 
       def trim_number(value)
-        value.to_s.gsub('-', '').gsub(' ', '')
+        value.to_s.gsub('-', '').gsub(' ', '') unless value.nil?
       end
     end
   end

@@ -11,11 +11,32 @@ module ActiveModel
         TestCreditcard.reset_callbacks(:validate)
       end
 
-      it "debitcard given" do
+      it "when debitcard number" do
         TestCreditcard.validates :number, debitcard: true
         creditcard = TestCreditcard.new(number: '4153141111111111')
         expect(creditcard.valid?).to be_falsey
         expect(creditcard.errors[:number]).to eq(["is debitcard."])
+      end
+
+      it "when creditcard string" do
+        TestCreditcard.validates :number, debitcard: true
+        creditcard = TestCreditcard.new(number: '4111111111111111')
+        expect(creditcard.valid?).to be_truthy
+        expect(creditcard.errors[:number]).to eq([])
+      end
+
+      it "when creditcard number (integer)" do
+        TestCreditcard.validates :number, debitcard: true
+        creditcard = TestCreditcard.new(number: 4111111111111111)
+        expect(creditcard.valid?).to be_truthy
+        expect(creditcard.errors[:number]).to eq([])
+      end
+
+      it "when creditcard number is nil" do
+        TestCreditcard.validates :number, debitcard: true
+        creditcard = TestCreditcard.new(number: nil)
+        expect(creditcard.valid?).to be_truthy
+        expect(creditcard.errors[:number]).to eq([])
       end
     end
   end
