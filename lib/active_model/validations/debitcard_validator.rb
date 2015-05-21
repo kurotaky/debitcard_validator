@@ -27,15 +27,15 @@ module ActiveModel
       # UNION BANK OF CALIFORNIA: 540997
       #
       def debitcard_regexes
-        /(^415314|^421614|^421615|^454202|^454203|^454205|^473063|^540997)/
+        /(^415314|^421614|^421615|^421641|^454202|^454203|^454205|^473063|^540997)/
       end
 
       # Prepaidcards
       #
-      # AMEX GIFT Card: 379029
       # V Preca: 428485
       # NEO MONEY: 428487
       # Cocokara Club Card: 428490
+      # AMEX GIFT Card: 379029
       #
       def prepaidcard_regexes
         /(^428485|^428487|^428490|^379029)/
