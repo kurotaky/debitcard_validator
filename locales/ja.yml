@@ -1,0 +1,5 @@
+ja:
+  errors:
+    messages:
+      is_debitcard: 'はデビットカードの番号です'
+      is_prepaidcard: 'はプリペイドカードの番号です'

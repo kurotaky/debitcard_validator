@@ -6,11 +6,11 @@ module ActiveModel
       def validate_each(record, attribute, value)
         value = trim_number(value)
         if value =~ debitcard_regexes
-          record.errors.add(attribute, 'is debitcard.')
+          record.errors.add(attribute, :is_debitcard || 'is debitcard.')
         end
 
         if value =~ prepaidcard_regexes
-          record.errors.add(attribute, 'is prepaidcard.')
+          record.errors.add(attribute, :is_prepaidcard || 'is prepaidcard.')
         end
       end
 

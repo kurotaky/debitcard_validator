@@ -1,0 +1,5 @@
+en:
+  errors:
+    messages:
+      is_debitcard: 'is debitcard.'
+      is_prepaidcard: 'is prepaidcard.'
