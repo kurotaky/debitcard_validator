@@ -1,3 +1,8 @@
 language: ruby
 rvm:
-  - 2.2.2
+  - 2.2
+before_install: gem install bundler -v 1.10.6
+notifications:
+  slack:
+    rooms:
+      secure: hCI/8RkCpTaMnAsBRCrrPA/9XM0ROBOCpMrPIio1X2pcks0iJgKU1Qpnsg/R0PeB9cTFAq2AXOYz76kuQf9KCSDTnREeUMQ5bbRniyDC3sKpJqX8YnTbKGf+dz9xQcQEirKpWWZpFdMsK8kZ1bAn9BQx+IJJq/RP+6IXzSDGhdGYSkKDSwUhMtfYz41ozxl+5DKWaTApxmCApN0UVrfC7xOVJoOdLAfBWjUMF2DSoUKoq5urzL6GvLJe5gYPfgGRz30vZor2UqmmTL5alyeqbBj16nOtKYCwyyuBs/Cfx06xdU4Ftd52P/iShAHgq9UiIoxohIcOljLWOAYL5Fzv/XnqJvjoTSn079tnpWu+lwFX9ICvEB9iv8mdSsuN5rBd29XA02KCX+qmO/qHiiNIhtUO2p3lo76zKpzpoJDoeKvPsOUO7t7IovlB65+H5+jSfyUMJ2+aOAVrUq1lLfBNp0S3wIFjTz7Zr+Mz+BEkUjfyOkILzOs51reNMPNes9vzB22S93xZkWBnhP6nzFBEfexOMJZG8+23O/KBFKwekcUM/ET1lqWW9+Z4JE6h/6euygNp2LVg23el1jLvVGA6alJmyFl7vQXXHs3w4ZOshtcJZZAL7BNQHYLoFVfprSOsapj3oWxzsIsXlLGDXMXpAdnVwFrlAqat/yNZHU2aHwk=
